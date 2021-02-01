@@ -26,8 +26,8 @@ module.exports = {
         let content = "text/html; charset=utf-8";
         getAndServe(res, path, content);
     },
-    side(req, res) {
-        let path = "public/html/about.html";
+    contact(req, res) {
+        let path = "public/html/contact.html";
         let content = "text/html; charset=utf-8";
         getAndServe(res, path, content);
     },

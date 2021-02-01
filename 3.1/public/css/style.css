@@ -1,16 +1,14 @@
-body{
-
-    background-image: url("../images/background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
 }
 
-#homeText{
-    font-family: arial;
-    color: white;
-    font-weight: bold;
-    font-size: xxx-large;
-    text-align: center;
-    background-color: coral;
-    margin-top: 2em;
+#contactForm input{
+    margin-top: 1%;
+}
+
+#submitContactForm:hover{
+    cursor: pointer;
 }
