@@ -1,0 +1,16 @@
+body{
+
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#homeText{
+    font-family: arial;
+    color: white;
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: center;
+    background-color: coral;
+    margin-top: 2em;
+}
