@@ -8,7 +8,18 @@
 </head>
 <body>
 
+    <h1>The POST form</h1>
     <form id="contactForm" method="post" action="/contact">
+        <input type="text" name="name" id="name" placeholder="Enter your name"/>
+        <input type="email" name="email" id="email" placeholder="Enter your e-mail"/>
+        <input type="tel" name="telNo" id="TelNo" placeholder="Enter your phonenumber"/>
+        <input type="text" name="headline" id="headline" placeholder="What's the topic?"/>
+        <input type="text" name="message" id="message" placeholder="What is it regarding?"/>
+        <input type="submit" value="Send" name="submitContactForm" id="submitContactForm">
+    </form>
+
+    <h1>The GET form</h1>
+    <form id="contactForm" method="GET" action="/contact">
         <input type="text" name="name" id="name" placeholder="Enter your name"/>
         <input type="email" name="email" id="email" placeholder="Enter your e-mail"/>
         <input type="tel" name="telNo" id="TelNo" placeholder="Enter your phonenumber"/>

@@ -19,13 +19,23 @@ module.exports = {
     route(req, res, body) {
         let arr = req.url.split(".");
         let ext = arr[arr.length - 1];
+
+        if(req.method == 'POST'){
+            console.log('Post request'); 
+        }
         if (typeof requestHandlers[req.url] === 'function') {  // look for route
             requestHandlers[req.url](req, res);                // if found use it
-        } else if (typeof requestHandlers[ext] === "function") {
+        } else if (typeof requestHandlers[ext] === "function") { //Her fanger vi css, png, js og ico - hvis det sidste i vores array er en funktion (fx css)
             requestHandlers[ext](req, res);
         } else {
             console.log("5: " + ext);
-            requestHandlers["/notfound"](req, res);        // use notfound
+            if(req.method == 'GET') {
+                console.log('Get request');
+                requestHandlers["/contact"](req, res);
+            }
+            else {
+                requestHandlers["/notfound"](req, res);        // use notfound
+            }
         }
     }
 }
