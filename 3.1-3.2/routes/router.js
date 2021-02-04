@@ -21,7 +21,7 @@ module.exports = {
         let ext = arr[arr.length - 1];
 
         if(req.method == 'POST'){
-            console.log('Post request'); 
+            console.log('Post request'); //not sure if this counts as a reciept :-) 
         }
         if (typeof requestHandlers[req.url] === 'function') {  // look for route
             requestHandlers[req.url](req, res);                // if found use it
